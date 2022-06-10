@@ -3,7 +3,7 @@
 session_start(); // Memulai session
  
 if (!isset($_SESSION['username'])) { // Jika session username belum ada
-    header("Location: login.php"); // Redirect ke halaman index.php
+    header("Location: login.php"); // Redirect ke halaman login.php
 } 
  
 ?>
