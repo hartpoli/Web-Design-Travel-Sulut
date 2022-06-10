@@ -16,7 +16,7 @@ session_start(); // Memulai session
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cuaca.css">
     <link rel="icon" href="asset1/logo1.jpg">
-    <title>Cuaca</title>
+    <title>Waktu</title>
 </head>
 <body>
     <div class="container">
