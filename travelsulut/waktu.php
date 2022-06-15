@@ -50,6 +50,6 @@ session_start(); // Memulai session
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- Moment.js -->
-    <script src="js/cuaca.js"></script> <!-- Cuaca.js -->
+    <script src="js/waktu.js"></script> <!-- Waktu.js -->
 </body>
 </html>
