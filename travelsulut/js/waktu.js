@@ -1,13 +1,10 @@
 const timeEl = document.getElementById('time'); 
 const dateEl = document.getElementById('date');
-const currentWeatherItemsEl = document.getElementById('current-weather-items');
 const timezone = document.getElementById('time-zone');
-const countryEl = document.getElementById('country');
 
 const API_KEY ='49cc8c821cd2aff9af04c9f98c36eb74';
 
-setInterval(() => { // 
-    const time = new Date();
+setInterval(() => { 
     const month = time.getMonth();
     const date = time.getDate();
     const day = time.getDay();
@@ -35,37 +32,4 @@ function getWeatherData () { // kita buatkan function getWeatherData untuk menga
         })
 
     })
-}
-
-function showWeatherData (data){ // kita buatkan function showWeatherData untuk menampilkan data dari API
-    let {humidity, pressure, sunrise, sunset, wind_speed} = data.current; // kita buatkan variabel humidity, pressure, sunrise, sunset, wind_speed untuk mengambil data dari API
-
-    timezone.innerHTML = data.timezone; // kita buatkan variabel timezone untuk menampilkan data timezone dari API
-    countryEl.innerHTML = data.lat + 'N ' + data.lon+'E'; // kita buatkan variabel countryEl untuk menampilkan data latitude dan longitude dari API
-
-    currentWeatherItemsEl.innerHTML = // kita buatkan variabel currentWeatherItemsEl untuk menampilkan data dari API
-    `<div class="weather-item">
-        <div>humidity</div>  
-        <div>${humidity}%</div>
-    </div>
-    <div class="weather-item">
-        <div>pressure</div>
-        <div>${pressure}</div>
-    </div>
-    <div class="weather-item">
-        <div>Wind Speed</div>
-        <div>${wind_speed}</div>
-    </div>
-    <div class="weather-item">
-        <div>sunrise</div>
-        <div>${window.moment(sunrise * 1000).format('HH:mm a')}</div>
-    </div>
-    <div class="weather-item">
-        <div>sunset</div>
-        <div>${window.moment(sunset*1000).format('HH:mm a')}</div>
-    </div>
-
-
-
-    `;
 }
