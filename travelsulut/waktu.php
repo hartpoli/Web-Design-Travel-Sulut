@@ -36,13 +36,6 @@ session_start(); // Memulai session
             <!-- Baris awal Cuaca -->
                     <div class="current-date"> <!--- Tanggal -->
                         <span id="current-date"> <!-- Hari -->
-                            <?php
-                                $hari = date(''); // Mendapatkan hari dari waktu sekarang
-                                $tanggal = date(''); // Mendapatkan tanggal dari waktu sekarang
-                                $bulan = date(''); // Mendapatkan bulan dari waktu sekarang
-                                $tahun = date(''); // Mendapatkan tahun dari waktu sekarang
-                                echo $hari . " " . $tanggal . " " . $bulan . " " . $tahun; // Menampilkan hari, tanggal, bulan, dan tahun
-                            ?>
                         </span>
                     </div> <!--- Baris Akhir Tanggal -->
 
