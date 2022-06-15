@@ -37,19 +37,17 @@ session_start(); // Memulai session
                     <div class="current-date"> <!--- Tanggal -->
                         <span id="current-date"> <!-- Hari -->
                             <?php
-                                $hari = date('l'); // Mendapatkan hari dari waktu sekarang
-                                $tanggal = date('d'); // Mendapatkan tanggal dari waktu sekarang
-                                $bulan = date('F'); // Mendapatkan bulan dari waktu sekarang
-                                $tahun = date('Y'); // Mendapatkan tahun dari waktu sekarang
-                                echo $hari . ", " . $tanggal . " " . $bulan . " " . $tahun; // Menampilkan hari, tanggal, bulan, dan tahun
+                                $hari = date(''); // Mendapatkan hari dari waktu sekarang
+                                $tanggal = date(''); // Mendapatkan tanggal dari waktu sekarang
+                                $bulan = date(''); // Mendapatkan bulan dari waktu sekarang
+                                $tahun = date(''); // Mendapatkan tahun dari waktu sekarang
+                                echo $hari . " " . $tanggal . " " . $bulan . " " . $tahun; // Menampilkan hari, tanggal, bulan, dan tahun
                             ?>
                         </span>
                     </div> <!--- Baris Akhir Tanggal -->
 
         </div>
-    </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- Moment.js -->
+    </div>    
     <script src="js/waktu.js"></script> <!-- Waktu.js -->
 </body>
 </html>
